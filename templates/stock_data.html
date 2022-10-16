@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>STOCK OPEN PRICE PREDICTION APPLICATION FORM</title>
+    <center><H2>STOCK OPEN PRICE PREDICTION </H2></center>
+</head>
+<body background="https://store-images.s-microsoft.com/image/apps.420.13978863995488757.223cd6b9-acf8-4537-8267-af13528bedd6.7513a179-7a57-4e90-b721-403b0074b366?mode=scale&q=90&h=1080&w=1920">
+<form action = "{{url_for('predict_stock')}}" method="POST">
+ <p><b>ESCORTS.NS(Adj Close) :</b> <input type = "float" size=5 name="close" value={{close}} >
+    <b>Nifty Open:</b> <input type = "float" size=5 name="nifty" value={{nifty}} ></p>
+
+    <b></b><input type = "submit" value="Submit" />
+    <b><H2>Predicted Stock Open Price of a Mutual Fund Organisation with ESCORTS.NS(Adj Close) {{cl}} and Nifty Open {{nif}} is {{stock_open}}</H2></b>
+</form>
+</body>
+</html>
