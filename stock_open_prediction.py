@@ -4,7 +4,7 @@ app = Flask(__name__)
 #initialize ml model
 from joblib import dump, load
 # load the saved model
-stock_app = load('escorts_prediction.joblib')
+stock_app = load('escorts_predictions.joblib')
 
 @app.route('/', methods=['POST', 'GET'])
 def home():
